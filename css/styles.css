@@ -873,9 +873,9 @@ header:after {
   font-weight: 300;
 }
 
-@media (min-width: 695px) {
+/* @media (min-width: 695px) {
   .session__desc { display: none; }
-}
+} */
 
 .session__desc > p { margin-bottom: .5em; }
 
