@@ -1509,3 +1509,36 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 .dark-blue {
   color: #00467f;
 }
+
+.contact-info{
+  background-color: #80A3C0;
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: .58824em 1.17647em;
+}
+
+.contact__title {
+  position: relative;
+  color: #fff!important;
+  text-transform: uppercase;
+  margin: 0 0 .1em;
+  font-size: 1.17647em;
+  font-weight: 400;
+  padding-top: 1px;
+}
+
+.contact__title + .marker { display: none; }
+
+.contact__desc {
+  margin-top: 10px;
+  color: #fff!important;
+  overflow: hidden;
+  display: block;
+  font-size: .94118em;
+  font-weight: 300;
+}
+
+.contact-info a {
+  color:rgb(0, 0, 0)
+}
