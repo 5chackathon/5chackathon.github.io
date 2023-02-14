@@ -31,6 +31,17 @@ html {
   color: white;
 }
 
+.sticky{
+  overflow:hidden;
+  background-color:#09689E; 
+  /* margin-bottom:50px; */
+  width:100%; 
+  color:white; 
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #606060;
@@ -1477,6 +1488,7 @@ header:after {
 -webkit-transition-duration : 0.2s;
 -webkit-transition-timing-function : ease-in-out;
 -moz-transition : all 0.2s ease-in-out;
+  padding-bottom:0;
 }
 
 .panel:hover {
@@ -1486,9 +1498,24 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 -webkit-transform: scale(1.02);
 -moz-transform: scale(1.02);
 }
+.panel-heading{
+  padding: 0;
+  text-align: center;
+}
+.panel-heading {
+  text-align: center;
+
+}
 .panel-title{
   padding: 0;
+  text-align: center;
 }
+.panel-body{
+  text-align: center;
+  padding-bottom:10;
+}
+.panel-body ul { text-align: center; }
+
 /* smaller font for ipad viewport */
 @media (max-width: 975px) and (min-width: 765px) {
   .panel-title {

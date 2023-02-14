@@ -16,15 +16,20 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="javascript.js"></script>
+    </head>
+<body>
 <section>
-    <div class="topnav">
-        <a class="home" href="#home">Home</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#sponsorship">Sponsors</a>
-        <a href="#coc">Code of Conduct</a>
-        <a href="#hack-week">Hack Week</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <div class="sticky">
+        <div class="topnav" id="topnav">
+            <a class="home" href="#home">Home</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#sponsorship">Sponsors</a>
+            <a href="#coc">Code of Conduct</a>
+            <a href="#hack-week">Hack Week</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 </section>
 <section>
   <div class="banner">
@@ -200,59 +205,62 @@
           <div class="col-sm-3">
             <div class="panel panel-default text-center">
               <div class="panel-heading">
-                <h3>Bronze</h3>
+                <h2 style="color: #a46628"><b>Bronze</b></h2>
               </div>
               <div class="panel-body">
                 <h3 class="panel-title price">$250</h3>
               </div>
-              <ul class="list-group">
-                <li class="list-group-item">Swag distribution</li>
-                <li class="list-group-item">Logo on website, t-shirts, poster</li>
-              </ul>
+              <br>
+              <div class="panel-body">
+                <p>+ Swag distribution</p>
+                <p>+ Logo on website, t-shirts, poster</p>
+              </div>
+              <br>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="panel panel-default text-center">
               <div class="panel-heading">
-                <h3>Silver</h3>
+                <h2 style="color: #c0c0c0"><b>Silver</b></h4>
               </div>
               <div class="panel-body">
                 <h3 class="panel-title price">$500</h3>
               </div>
-              <ul class="list-group">
-                <li class="list-group-item"><strong>Everything in Bronze</strong></li>
-                <li class="list-group-item">Access to participant resumé database</li>
-              </ul>
+              <br>
+              <div class="panel-body">
+                <p><strong>Everything in Bronze</strong></p>
+                <p>+ Access to participant resumé database</p>
+              </div>
+              <br>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="panel panel-primary text-center">
               <div class="panel-heading">
-                <h3>Gold</h3>
+                <h2 style="color: #b39700"><b>Gold</b></h2>
               </div>
               <div class="panel-body">
                 <h3 class="panel-title price">$1000</h3>
+                <p><strong>Everything in Silver</strong></p>
+                <p>+ Prizes sponsored in [your] name</p>
               </div>
-              <ul class="list-group">
-                <li class="list-group-item"><strong>Everything in Silver</strong></li>
-                <li class="list-group-item">Prizes sponsored in [your] name</li>
-              </ul>
+              <br>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="panel panel-default text-center">
               <div class="panel-heading">
-                <h3>Platinum</h3>
+                <h2><b>Platinum</b></h2>
               </div>
               <div class="panel-body">
                 <h3 class="panel-title price">$2000</h3>
-                <!-- <div>Limit: 1</div> -->
               </div>
-              <ul class="list-group">
-                <li class="list-group-item"><strong>Everything in Gold</strong></li>
-                <li class="list-group-item">Keynote Speaker</li>
-                <li class="list-group-item">Special placement of logo on official event T-shirts</li>
-              </ul>
+              <div class="panel-body">
+                <p><strong>Everything in Gold</strong></p>
+                <p>+ Keynote Speaker</p>
+                <p>+ Special placement of logo on official event T-shirts</p>
+              </div>
+              <br>
             </div>
           </div>
       </div>
@@ -320,8 +328,13 @@
         <b class="marker"></b>
       </div>
   </section>
-
   <br>
+  <section>
+    <div class="banner">
+        <img class="banner__img" src="public/img/logo-sp23-long.png" alt="5C Hackathon"> 
+        <!-- <span class="banner__main">5C Hackathon</span> -->
+    </div>
+</section>
   <section>
     <div class="topnav">
         <a class="home" href="#home">Home</a>
@@ -332,3 +345,5 @@
         <a href="#contact">Contact</a>
       </div>
 </section>
+
+</body>
