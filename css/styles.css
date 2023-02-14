@@ -845,7 +845,7 @@ header:after {
   padding-top: 1px;
 }
 
-.session__title + .marker { display: none; }
+/* .session__title + .marker { display: none; } */
 
 .session__track {
   position: absolute;
