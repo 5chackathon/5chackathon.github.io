@@ -1,0 +1,36 @@
+name: Production Server Deploy
+
+# Trigger deployment only on push to master branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy pushed change to prod server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the files
+        uses: actions/checkout@v2
+
+      - name: Deploy branch
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HACKATHON_HOST }}
+          username: ${{ secrets.HACKATHON_USERNAME }}
+          key: ${{ secrets.HACKATHON_KEY }}
+          port: ${{ secrets.HACKATHON_PORT }}
+          script: |
+            echo "CI/CD: starting deploy"
+            cd ~/5chackathon.github.io
+            echo "CI/CD: checkout branch"
+            sudo git checkout main
+            echo "CI/CD: pulling latest file"
+            sudo git pull https://github.com/5chackathon/5chackathon.github.io.git
+            echo "CI/CD: finished"
