@@ -23,9 +23,9 @@ jobs:
           port: ${{ secrets.HACKATHON_PORT }}
           script: |
             echo "CI/CD: starting deploy"
-            cd ~
+            cd ~/5chackathon.1
             echo "CI/CD: checkout branch"
             sudo git checkout main
             echo "CI/CD: pulling latest file"
-            sudo git pull https://github.com/jterwilliger30/5chackathon.github.io.git
+            sudo git pull https://github.com/jterwilliger30/5chackathon.1.git
             echo "CI/CD: finished"
