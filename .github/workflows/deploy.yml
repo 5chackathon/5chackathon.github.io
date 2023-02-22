@@ -14,13 +14,13 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
-      - name: deploy war file
+      - name: Deploy branch
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.INDIGO_HOST }}
-          username: ${{ secrets.INDIGO_USERNAME }}
-          key: ${{ secrets.INDIGO_KEY }}
-          port: ${{ secrets.INDIGO_PORT }}
+          host: ${{ secrets.HACKATHON_HOST }}
+          username: ${{ secrets.HACKATHON_USERNAME }}
+          key: ${{ secrets.HACKATHON_KEY }}
+          port: ${{ secrets.HACKATHON_PORT }}
           script: |
             echo "CI/CD: starting deploy"
             cd ~
