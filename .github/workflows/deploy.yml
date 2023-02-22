@@ -1,0 +1,31 @@
+name: Indigo-stg-deploy
+
+# Trigger deployment only on push to master branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy pushed change to prod server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the files
+        uses: actions/checkout@v2
+
+      - name: deploy war file
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.INDIGO_HOST }}
+          username: ${{ secrets.INDIGO_USERNAME }}
+          key: ${{ secrets.INDIGO_KEY }}
+          port: ${{ secrets.INDIGO_PORT }}
+          script: |
+            echo "CI/CD: starting deploy"
+            cd ~
+            echo "CI/CD: checkout branch"
+            sudo git checkout main
+            echo "CI/CD: pulling latest file"
+            sudo git pull https://github.com/jterwilliger30/5chackathon.github.io.git
+            echo "CI/CD: finished"
