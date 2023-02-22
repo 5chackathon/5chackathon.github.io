@@ -1,10 +1,12 @@
-name: Indigo-stg-deploy
+name: Production Server Deploy
 
 # Trigger deployment only on push to master branch
 on:
   push:
     branches:
       - main
+  pull_request:
+    types: [closed]
 
 jobs:
   deploy:
