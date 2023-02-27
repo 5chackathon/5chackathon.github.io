@@ -1,2 +1,2 @@
-# 5chackathon.github.io
-A temporary website host for the 5C Hackathon!
+# 5chack.com
+A website host for the 5C Hackathon occuring April 14-15, 2023!
