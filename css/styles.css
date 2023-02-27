@@ -722,6 +722,22 @@ header:after {
   border: 2px solid white;
 }
 
+.overview {
+  padding: 3em 0 2em;
+  height: 100%;
+  text-align: center;
+  background-color: #eef7fa;
+}
+
+.overview_desc {
+  overflow: hidden;
+  display: block;
+  max-width: 750px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .schedule {
   padding: 2em 0 3em;
   background-color: white;
@@ -1101,7 +1117,7 @@ header:after {
   }
 }
 
-.hack-week .layout--page .desc {
+.hack-week .desc {
   text-align: center;
   margin-bottom: 20px;
   max-width: 750px;
@@ -1332,7 +1348,7 @@ header:after {
 }
 
 .layout--page {
-  max-width: 1008px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 10px;
 }
