@@ -721,7 +721,12 @@ header:after {
   border: 2px solid white;
 }
 
-.schedule, .coc {
+.schedule {
+  padding: 2em 0 3em;
+  background-color: white;
+}
+
+.coc {
   padding: 2em 0 3em;
   background-color: #eef7fa;
 }
@@ -1541,7 +1546,7 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 .contact-info{
-  background-color: #80A3C0;
+  background-color: #eef7fa;
   display: block;
   position: relative;
   height: 100%;
@@ -1562,7 +1567,7 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 
 .contact__desc {
   margin-top: 10px;
-  color: #fff!important;
+  color: black!important;
   overflow: hidden;
   display: block;
   font-size: .94118em;
