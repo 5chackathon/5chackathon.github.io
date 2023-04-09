@@ -47,9 +47,9 @@
       </p>
       <p class="intro__desc"><b><i>Interested? Let's do this.</i></b></p>
       <!-- <a href="https://5chackathon-sp23.devpost.com/" style="cursor: pointer;" class="reg intro__reg"><span class="nowrap mainbutton">REGISTER NOW!</span></a> -->
-      <a href="https://forms.gle/cH7jZ1rJVCaL3zvt5" style="cursor: pointer;" class="reg intro__reg"><span class="nowrap mainbutton">REGISTER NOW!</span></a>
+      <a href="https://forms.gle/cH7jZ1rJVCaL3zvt5" style="cursor: pointer; color: #215259; text-decoration: none;" class="reg intro__reg"><span class="nowrap mainbutton">REGISTER NOW!</span></a>
       <br><br>
-      <p class="bold-blue"><i>Registration closes Monday, April 10th at 11:59 pm PT</i></p>
+      <p id = "reg-deadline"><i>Registration closes Monday, April 10th at 11:59 pm PT</i></p>
     </div>
   </div>
 </section>
@@ -75,7 +75,7 @@
         <div class="col-sm">
           <h4>Individual Development</h4>
           <p class="">
-            <span class="bold-blue">Teaching and mentorship</span> are of the utmost importance. We teach <span class="bold-blue">beginner and advanced workshops </span> throughout the week preceding the hackathon, an event we lovingly call <a href="#hack-week">Hack Week</a>. We have mentors available throughout the event as well.
+            <span class="bold-blue">Teaching and mentorship</span> are of the utmost importance. We teach <span class="bold-blue">beginner and advanced workshops </span> throughout the week preceding the hackathon, an event we lovingly call <a href="#hack-week" class = "link">Hack Week</a>. We have mentors available throughout the event as well.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@
       <!-- <p>The overarching theme is <b>Tech for Good</b>. <b>Good</b> entails many things. <b>Good</b> means helping people, animals, organizations, or the environment positively. <b>Good</b> can be big: serving entire populations with disabilities, in minority status, or who have been disenfranchised, for example. It can also be small: assisting a local COVID testing site, connecting people to their local voting station, or stopping the spread of a locally invasive plant. The sky is the limit, but in any case, it is always for the GREATER <b>Good</b> rather than personal gain. </p> -->
       <p>The overarching theme is <b>Tech for Good</b>! <b>Good</b> means helping people, animals, organizations, or the environment positively. <b>Good</b> can be big, serving entire populations, and it can be small, impacting local or niche topics. In any case, it is always for the greater <b>Good</b> rather than personal gain. </p>
 
-      <p>Prizes will be awarded to the top team in each track and the top team in each overlay that creates a great project while demonstrating the spirit of <b>Tech for Good</b>. You can read more about about our Judging Criteria and Project Submission process on our <a href="https://5chackathon-sp23.devpost.com/">DevPost</a>. </p>
+      <p>Prizes will be awarded to the top team in each track and the top team in each overlay that creates a great project while demonstrating the spirit of <b>Tech for Good</b>. You can read more about about our Judging Criteria and Project Submission process on our <a class = "link" href="https://5chackathon-sp23.devpost.com/">DevPost</a>. </p>
 <!--       
       <p>We have an additional award, the "Outside of the Box" Award for non-technical, non-traditional projects that don't involve coding, data, or usual hackathon media. Examples include, but are not limited to, songs, children's books, artwork, and policy analysis. </p> -->
         
@@ -114,14 +114,14 @@
         </div>
 
         <div class="col-sm">
-          <div class="card text-center" id="track">
+          <div class="card text-center" class="track">
             <div class="card-body">
             <h4 class="dark-blue">Health Equity</h4>
             <div class="card-text">
               Explore social justice through a health lens. Everyone deserves the opportunity to achieve their best health and best self. How can you approach or shed light on the  factors that limit access to healthcare and good health practices for all? 
             </div>
           </div>
-          <h6>Supported by <a href="https://strava.com/">Strava</a></h6>
+          <h6>Supported by <a class = "link" href="https://strava.com/">Strava</a></h6>
         </div>
       </div>
 
@@ -132,7 +132,7 @@
     <div class="row">
 
       <div class="col-sm">
-        <div class="card text-center" id="track">
+        <div class="card text-center" class="track">
           <div class="card-body">
             <h4 class="dark-blue">Education</h4>
             <div class="card-text">
@@ -148,7 +148,7 @@
       </div>
 
       <div class="col-sm">
-        <div class="card text-center" id="track">
+        <div class="card text-center" class="track">
           <div class="card-body">
           <h4 class="dark-blue">Sustainable Earth</h4>
           <div class="card-text">
@@ -170,19 +170,19 @@
       <div class="row">
 
         <div class="col-sm">
-          <div class="card text-center" id="track">
+          <div class="card text-center" class="track" id = "track-data">
             <div class="card-body">
               <h4 class="dark-blue">Data & Analytics</h4>
               <div class="card-text">
                 Have a dataset you've been itching to explore? If you mine some unique and powerful insights in your project, this prize might be yours.
               </div>
             </div>
-            <h6>Supported by <a href="https://www.bloomberg.com/">Bloomberg</a></h6>
+            <h6>Supported by <a class = "link" href="https://www.bloomberg.com/">Bloomberg</a></h6>
           </div>
         </div>
 
         <div class="col-sm">
-          <div class="card text-center" id="track">
+          <div class="card text-center" id="track-outbox" class = "track">
             <div class="card-body">
               <h4 class="dark-blue">Out of the Box for Good</h4>
               <div class="card-text">
@@ -193,7 +193,7 @@
         </div>
 
         <div class="col-sm">
-          <div class="card text-center" id="track">
+          <div class="card text-center" id="track-beginner" class = "track">
             <div class="card-body">
             <h4 class="dark-blue">Beginner</h4>
             <div class="card-text">
@@ -244,21 +244,21 @@
         <div class="d-flex w-100 justify-content-between">
           <h5 class="dark-blue">Do I need to know how to code?</h5>
         </div>
-        <p class="mb-1">Nope! Although hackathons are traditionally coding-heavy, we've opened up our hackathon to include all creative ventures. We have categories for technical and non-technical projects. That said, if you want to learn how to code, a hackathon project is a fantastic opportunity to dive in! Our <a href="#hack-week">HackWeek</a> workshops will help you gain coding confidence and skillsets.</p>
+        <p class="mb-1">Nope! Although hackathons are traditionally coding-heavy, we've opened up our hackathon to include all creative ventures. We have categories for technical and non-technical projects. That said, if you want to learn how to code, a hackathon project is a fantastic opportunity to dive in! Our <a class = "link" href="#hack-week">Hack Week</a> workshops will help you gain coding confidence and skillsets.</p>
       </div>
 
       <div class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
           <h5 class="dark-blue">How can I participate?</h5>
         </div>
-        <p class="mb-1">Register at <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXNhAcG9U-VEb4_r293ABj6sGsMwKSZIQsrewEiIuEjTfZMg/viewform">this form</a>. It takes about 1 minute! Registration closes April 10, 11:59 pm PST to ensure sufficient time to form teams.</p>
+        <p class="mb-1">Register at <a class = "link" href="https://docs.google.com/forms/d/e/1FAIpQLSfXNhAcG9U-VEb4_r293ABj6sGsMwKSZIQsrewEiIuEjTfZMg/viewform">this form</a>. It takes about 1 minute! Registration closes April 10, 11:59 pm PST to ensure sufficient time to form teams.</p>
       </div>
 
       <div class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
           <h5 class="dark-blue">Do I need a team to sign up?</h5>
         </div>
-        <p class="mb-1">Nope! You can sign up as an individual and we will help you meet other amazing people to create your hackathon team. You can also join our <a href="https://5chackathon-sp23.devpost.com/">DevPost</a> to introduce yourself to other hackers looking for teammates.</p> 
+        <p class="mb-1">Nope! You can sign up as an individual and we will help you meet other amazing people to create your hackathon team. You can also join our <a class = "link" href="https://5chackathon-sp23.devpost.com/">DevPost</a> to introduce yourself to other hackers looking for teammates.</p> 
       </div>
 
       <div class="list-group-item list-group-item-action flex-column align-items-start">
@@ -279,7 +279,7 @@
         <div class="d-flex w-100 justify-content-between">
           <h5 class="dark-blue">How can I be a volunteer, mentor, or judge during the hackathon?</h5>
         </div>
-        <p class="mb-1">Send an email to <a href="mailto:5chackathon@gmail.com">5chackathon@gmail.com</a>. We'd love to have you on the team!</p>
+        <p class="mb-1">Send an email to <a class = "link" href="mailto:5chackathon@gmail.com">5chackathon@gmail.com</a>. We'd love to have you on the team!</p>
       </div>
 
 
@@ -309,7 +309,7 @@
     <tr>
       <td class="session__time">April 14, 5:00 PM</td>
       <td>Hack Week ends</td>
-      <td><a href="#hack-week">schedule below!</a></td>
+      <td><a class = "bright-link" href="#hack-week">schedule below!</a></td>
     </tr>
     <tr>
       <td class="session__time">April 14, 6:00 PM</td>
@@ -371,7 +371,7 @@
     <tr>
       <td class="session__time">April 15, 7:00 PM</td>
       <td>Project Submission Closes - Congrats!</td>
-      <td><a href="https://5chackathon-sp23.devpost.com/">Devpost</a></td>
+      <td><a href="https://5chackathon-sp23.devpost.com/" class = "bright-link">Devpost</a></td>
     </tr>
     <tr>
       <td class="session__time">April 15, 7:00 - 7:15 PM</td>
@@ -454,7 +454,7 @@
       </div>
       <div class="col-sm">
         <h5>Code!</h5>
-        <p>Check out some projects and workshops from previous years at our <a href="http://github.com/5CHackathon">GitHub</a> page. During Hack Week, starter code for technical workshops may also be uploaded here.</p>
+        <p>Check out some projects and workshops from previous years at our <a class = "link" href="http://github.com/5CHackathon">GitHub</a> page. During Hack Week, starter code for technical workshops may also be uploaded here.</p>
       </div>
     </div>
     <br>
@@ -528,7 +528,7 @@
           <div class="card-body">
             <h5 class="card-title text-center">Friday, April 14</h5>
             <h5 class="dark-blue">Resume Workshop with a Bloomberg Tech Recruiter: How to Market your Hackathon Experience</h5>
-            <h6 class="card-text text-muted"><a href="https://www.linkedin.com/in/nia-blessitt-a778b398/">Nia Blessit</a>, Entry Level Engineering Recruiter at <a href="https://www.bloomberg.com/">Bloomberg</a></h6>
+            <h6 class="card-text text-muted"><a href="https://www.linkedin.com/in/nia-blessitt-a778b398/">Nia Blessit</a>, Entry Level Engineering Recruiter at <a href="https://www.bloomberg.com/" class = "link">Bloomberg</a></h6>
             <p class="card-text">Location: Zoom (register to get Meeting ID)</p>
             <p class="card-text">Time: 11:00 AM</p>
             <br>
@@ -540,7 +540,7 @@
             <br>
 
             <h5 class="dark-blue">How Strava's Geo Team uses Apache Spark to Make Maps for Human-Powered Activities</h5>
-            <h6 class="card-text text-muted"><a href="https://www.linkedin.com/in/charles-watson-35488aa1/">Charlie Watson PO '17</a>, Senior Server Engineer at <a href="https://www.strava.com/">Strava</a></h6>
+            <h6 class="card-text text-muted"><a href="https://www.linkedin.com/in/charles-watson-35488aa1/">Charlie Watson PO '17</a>, Senior Server Engineer at <a href="https://www.strava.com/" class = "link">Strava</a></h6>
             <p class="card-text">Location: Hive Studio 1</p>
             <p class="card-text">Time: 4:00 PM</p>
             <!-- <p class="card-text">Description:</p> -->
@@ -780,13 +780,13 @@
 
 <section>
   <div class="topnav" id="topnav">
-      <a class="home" href="#home">Home</a>
-      <a href="#faq">FAQ</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#hack-week">Hack Week</a>
-      <a href="#sponsorship">Sponsors</a>
+      <a class="bright-link home" href="#home">Home</a>
+      <a  href="#faq">FAQ</a>
+      <a  href="#schedule">Schedule</a>
+      <a  href="#hack-week">Hack Week</a>
+      <a  href="#sponsorship">Sponsors</a>
       <a href="#coc">Code of Conduct</a>
-      <a href="#contact">Contact</a>
+      <a  href="#contact">Contact</a>
     </div>
 </section>
 
