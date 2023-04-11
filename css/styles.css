@@ -18,7 +18,7 @@ html {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #f2f2f2!important;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,7 +28,7 @@ html {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #00003f;
-  color: white;
+  color: greenyellow!important;
 }
 
 /* Add a color to the active/current link */
@@ -694,7 +694,8 @@ header:after {
 }
 
 .mainbutton, .mainbutton:hover {
-  font-weight: normal;
+  font-weight: bold;
+  color: #212529;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -702,6 +703,7 @@ header:after {
 .intro__reg {
   font-size: 1.2em;
   margin-top: 0.5em;
+  background-color: #eef7fa;
   padding: 15px 45px;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -709,7 +711,7 @@ header:after {
 }
 
 .intro__reg:hover {
-  color: #3e9df7;
+  color: #212529;
   background-color: #fff;
   text-decoration: none;
 }
@@ -797,7 +799,7 @@ header:after {
 
 .schedule tr {
   padding: .58824em 1.17647em;
-  color: #fff!important;
+  color: #fff;
 }
 
 .schedule td { padding: .5em 2em; }
@@ -816,7 +818,8 @@ header:after {
 }
 
 .schedule tr:nth-child(even) {
-  background-color: #80A3C0;
+  background-color: #eef7fa;
+  color: #004683;
 }
 
 .session:hover > .marker {
@@ -1380,7 +1383,7 @@ header:after {
   margin-bottom: 10px;
 }
 
-.card#track {
+.card, .track {
   min-height: 250px;
 }
 
@@ -1519,6 +1522,8 @@ header:after {
   font-size: 35%;
   font-style: italic;
 }
+
+
 .panel {
 -webkit-transition-property : scale;
 -webkit-transition-duration : 0.2s;
@@ -1565,10 +1570,14 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
   }
 }
 
-.bold-blue {
-  font-weight: 400;
-  color: #3e9df7;
+.bright-link{
+  color: #ffffff!important;
 }
+
+a:link{
+  color: #0d1ee0;
+}
+
 .dark-blue {
   color: #00467f;
 }
@@ -1605,4 +1614,8 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 
 .contact-info a {
   color:rgb(0, 0, 0)
+}
+
+#reg-deadline {
+  color: #ffffff;
 }
