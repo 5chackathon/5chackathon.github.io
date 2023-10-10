@@ -28,7 +28,7 @@ jobs:
           port: ${{ secrets.HACKATHON_PORT }}
           script: |
             echo "CI/CD: starting deploy"
-            cd ~/5chackathon.github.io
+            cd /www/5chack.com/5chackathon.github.io
             echo "CI/CD: checkout branch"
             git checkout main
             echo "CI/CD: pulling latest file"
